@@ -34,4 +34,7 @@ public interface IdeaApiService {
 
     @POST("app/index/posts")
     Observable<BaseDataBean> getPostDatas(@QueryMap Map<String, Object> imgs);
+
+    @POST("app/user/getUser")
+    Observable<BaseDataBean<RegistDataBean>> getUser();
 }

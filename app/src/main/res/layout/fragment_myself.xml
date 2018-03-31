@@ -54,6 +54,7 @@
             fresco:placeholderImage="@mipmap/default_person_icon" />
 
         <TextView
+            android:id="@+id/userName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -63,6 +64,7 @@
             android:textSize="14sp" />
 
         <TextView
+            android:id="@+id/lvnian"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -87,18 +89,19 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/zan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="28"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="我的赞"
                 android:textColor="@color/colorPrimary"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <View
@@ -106,7 +109,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:background="@color/colorPrimary"></View>
+            android:background="@color/colorPrimary" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -116,18 +119,19 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/fans"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="28"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="粉丝"
                 android:textColor="@color/colorPrimary"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <View
@@ -135,7 +139,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -145,18 +149,19 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/guanzhu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="28"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="我关注的"
                 android:textColor="@color/colorPrimary"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <View
@@ -164,7 +169,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -178,14 +183,15 @@
                 android:layout_height="wrap_content"
                 android:text="28"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25sp" />
+                android:textSize="22sp" />
 
             <TextView
+                android:id="@+id/guanzhuwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="关注我的"
                 android:textColor="@color/colorPrimary"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
 

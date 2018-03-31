@@ -79,4 +79,9 @@ public class HttpMehtod {
         Observable observable = IdeaApi.getApiService().getPostDatas(map);
         subscibe(observable, ideaObserver);
     }
+
+    public void getUser(IdeaObserver ideaObserver) {
+        Observable observable = IdeaApi.getApiService().getUser();
+        subscibe(observable, ideaObserver);
+    }
 }

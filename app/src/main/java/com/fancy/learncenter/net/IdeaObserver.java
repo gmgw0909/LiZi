@@ -54,9 +54,7 @@ public abstract class IdeaObserver<T extends BaseDataBean> implements Observer<B
 
     @Override
     public void onError(@NonNull Throwable e) {
-        ToastUtil.show("开始获取验证码" + e);
         onFail("我是系统错误");
-
     }
 
     @Override
