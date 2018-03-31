@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TopBanner">
+        <attr name="autoPlay" format="boolean"></attr>
+        <attr name="maginBottom" format="integer"></attr>
+        <attr name="isCycle" format="boolean"></attr>
+        <attr name="isPoint" format="boolean"></attr>
+        <attr name="pointBg" format="reference"></attr>
+        <attr name="pointPressedBg" format="reference"></attr>
+        <attr name="location" format="integer">
+            <enum name="center" value="14" />
+            <enum name="right" value="11" />
+        </attr>
+    </declare-styleable>
+</resources>

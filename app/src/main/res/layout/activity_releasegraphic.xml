@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/toolbar_layout_release" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:hint="标题(最多30个字)"
+            android:maxLength="30"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/yibaocun"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/shape_location_icon"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="已保存11:33"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_location_icon"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/ic_guanbi"
+        android:gravity="center"
+        android:padding="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="上海市陆家嘴"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+        <ImageView
+            android:id="@+id/biaoqing"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@mipmap/ic_biaoqing"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tupian"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/biaoqing"
+            android:padding="8dp"
+            android:src="@mipmap/ic_tupian" />
+
+        <ImageView
+            android:id="@+id/paizhao"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tupian"
+            android:padding="8dp"
+            android:src="@mipmap/ic_paizhao" />
+
+        <ImageView
+            android:id="@+id/weizhi"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/paizhao"
+            android:padding="8dp"
+            android:src="@mipmap/ic_weizhi" />
+
+        <ImageView
+            android:id="@+id/jianpan"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@mipmap/ic_jianpan" />
+
+    </RelativeLayout>
+</RelativeLayout>

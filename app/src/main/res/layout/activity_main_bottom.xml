@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#cfd7dd"
+    android:orientation="horizontal"
+    android:paddingTop="1dp">
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="@dimen/main_bottom_icon_size"
+            android:layout_height="@dimen/main_bottom_icon_size"
+            android:src="@mipmap/default_home" />
+
+        <TextView
+            android:id="@+id/home_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#000000"
+            android:textSize="@dimen/main_bottom_font_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friend"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/friend_icon"
+            android:layout_width="@dimen/main_bottom_icon_size"
+            android:layout_height="@dimen/main_bottom_icon_size"
+            android:src="@mipmap/default_friend" />
+
+        <TextView
+            android:id="@+id/friend_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="驴友"
+            android:textColor="#000000"
+            android:textSize="@dimen/main_bottom_font_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/release"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fancy"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/fancy_icon"
+            android:layout_width="@dimen/main_bottom_icon_size"
+            android:layout_height="@dimen/main_bottom_icon_size"
+            android:src="@mipmap/default_fancy" />
+
+        <TextView
+            android:id="@+id/fancy_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="精彩"
+            android:textColor="#000000"
+            android:textSize="@dimen/main_bottom_font_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/my_icon"
+            android:layout_width="@dimen/main_bottom_icon_size"
+            android:layout_height="@dimen/main_bottom_icon_size"
+            android:src="@mipmap/default_my" />
+
+        <TextView
+            android:id="@+id/my_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="#000000"
+            android:textSize="@dimen/main_bottom_font_size" />
+    </LinearLayout>
+
+</LinearLayout>
